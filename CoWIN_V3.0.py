@@ -44,6 +44,7 @@ config_data = json.load(config_data)
 version = config_data['version_name']
 app_type = config_data["app_type"]
 vaccine_limit = int(config_data["vaccine_lim"])
+time_limit_secs = int(config_data["time_limit_secs"])
 
 
 # In[18]:
@@ -139,5 +140,5 @@ elif app_type == "auto":
                 mylist.pack(side=LEFT, fill=BOTH)
                 scrollbar.config(command=mylist.yview)
                 mainloop()
-        time.sleep(300)  # every 5 mins check
+        time.sleep(time_limit_secs)  # every 5 mins check
 
