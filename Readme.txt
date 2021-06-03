@@ -1,7 +1,7 @@
 INTRODUCTION
 ------------
 
-This a second version of pet project for getting vaccine information for Indians from CoWIN site using public API provided by them.
+This a third version of pet project for getting vaccine information for Indians from CoWIN site using public API provided by them.
 For more information regarding the CoWIN API, visit this link: https://apisetu.gov.in/public/marketplace/api/cowin
 
 
