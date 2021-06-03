@@ -17,10 +17,6 @@ from playsound import playsound
 from datetime import datetime
 import time
 import webbrowser
-#import pyqrcode
-#import png
-#from pyqrcode import QRCode
-#from notify_run import Notify
 
 
 # In[12]:
@@ -62,21 +58,12 @@ age = int(input('\nEnter age => '))
 
 
 # In[15]
-print(date)
 URL = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id={}&date={}".format(
     dist_code, date)
 header = {
     'User-Agent':
     'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36'
         }
-#ny = Notify()
-#ny.register()
-#ep = (ny.endpoint)
-#qr = pyqrcode.create(ep)
-#qr.show()
-#now = datetime.now()
-#now = now.strftime("%d-%m-%Y %H:%M:%S")
-#qr.png(now+".png", scale = 8)
 
 # # Manual
 
@@ -151,7 +138,6 @@ elif app_type == "auto":
                         filter_df.available_capacity.iloc[i],
                         filter_df.vaccine.iloc[i])
                     print("Vaccine found in: {}".format(Data))
-                    #ny.send("Vaccine found in: {}".format(Data))
                     mylist.insert(END, Data)
 
                 mylist.pack(side=LEFT, fill=BOTH)

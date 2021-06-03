@@ -1,5 +1,6 @@
-{ "version_name":3.0,
-	"app_type":"auto",
-	"vaccine_lim":0.0,
-	"time_limit_secs": 300
+{ 
+  "version_name":3.0,
+  "app_type":"auto",
+  "vaccine_lim":10,
+  "time_limit_secs": 60
 }
